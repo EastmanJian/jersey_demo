@@ -23,6 +23,10 @@ public class Cache {
         this.msg = msg;
     }
 
+    public void clearMsg() {
+        this.msg = null;
+    }
+
     public String getMsg() {
         return msg;
     }
