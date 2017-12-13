@@ -13,7 +13,7 @@ public class UserResource {
     @GET
     @Produces(MediaType.TEXT_XML)
     public String getUser(@PathParam("username") String userName) {
-        return "<content><message>Hello " + userName + ", Welcome to RESTful word.</message>" +
+        return "<content><message>Hello " + userName + ", welcome to RESTful word.</message>" +
                 "<desc>This is a response of a REST GET request in xml with URI param parameter /users/{username}. " +
                 "Try to change the {username} parameter to see the effect.</desc>" +
                 "<foot>" + ARCHE_DESC + "</foot></content>";

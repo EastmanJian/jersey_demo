@@ -9,7 +9,8 @@ import static jersey.demo.Constants.ARCHE_DESC;
 import static jersey.demo.Constants.NEW_LINE;
 
 /**
- * Demo of REST JAX-RS, inject the parameters into a single bean. Also the usage of @MatrixParam, @HeaderParam.
+ * Demo of REST JAX-RS, using @BeanParam to inject the parameters into a single bean.
+ * Also the usage of @MatrixParam, @HeaderParam.
  *
  * Test it with curl command:
  *   curl -H 'Accept: text/plain' -H 'header: anything' 'https://eastmanjian.cn/jersey_demo/webapi/beanparam/Eastman;m=ValM;n=ValN?q=135'

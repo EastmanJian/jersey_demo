@@ -10,14 +10,15 @@ import static jersey.demo.Constants.*;
 
 
 /**
- * Example for RESTful PUT, POST, DELETE, @Consumes, sub-resource
+ * Example for RESTful HTTP methods GET, PUT, POST, DELETE, @Consumes, and sub-resource
  * Put a message to a cache, get back from a cache, also remove it from the cache.
  *
  * Test this example with the following curl commands
- *   curl -vi -X PUT -H "Accept: text/plain" -H "Content-Type: text/plain" -d 'some messages' "https://eastmanjian.cn/jersey_demo/webapi/cache/message
- *   curl -vi -X PUT -H "Accept: text/plain" -H "Content-Type: text/plain" -d 'some messages' "https://eastmanjian.cn/jersey_demo/webapi/cache/msgrsp"
- *   curl -vi -X POST -H "Accept: text/plain" -H "Content-Type: text/plain" -d 'some messages' "https://eastmanjian.cn/jersey_demo/webapi/cache/postmsg"
- *   curl -vi -X DELETE -H "Accept: text/plain" "https://eastmanjian.cn/jersey_demo/webapi/cache/delmsg"
+ *   curl -vi -X PUT -H 'Accept: text/plain' -H 'Content-Type: text/plain' -d 'some messages' 'https://eastmanjian.cn/jersey_demo/webapi/cache/message'
+ *   curl -vi -X PUT -H 'Accept: text/plain' -H 'Content-Type: text/plain' -d 'some messages' 'https://eastmanjian.cn/jersey_demo/webapi/cache/msgrsp'
+ *   curl -vi -X POST -H 'Accept: text/plain' -H 'Content-Type: text/plain' -d 'some messages' 'https://eastmanjian.cn/jersey_demo/webapi/cache/postmsg'
+ *   curl -vi -X DELETE -H 'Accept: text/plain' 'https://eastmanjian.cn/jersey_demo/webapi/cache/delmsg'
+ *   curl 'https://eastmanjian.cn/jersey_demo/webapi/cache/message'
  */
 @Path("/cache") //root resource
 public class PutPostDeleteResource {
