@@ -51,8 +51,6 @@
         <dependency>
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
-            <!-- If you are using GlassFish, the dependent jars are already integrated in the server,
-                 put the scope as provided here to avoid packing the dependent jars into the war package, -->
             <scope>provided</scope>
         </dependency>
         <dependency>
