@@ -13,7 +13,7 @@ import static jersey.demo.Constants.NEW_LINE;
 /**
  * Demo of REST JAX-RS, using @Context to obtain a general map of HTTP headers and cookies.
  * Test it with curl command:
- *   curl -i -H 'Accept: text/plain' -H 'Content-Type: text/plain' 'https://eastmanjian.cn/jersey_demo/webapi/headermap'
+ *   curl -i -H 'Accept: text/plain' -H 'header: anything' 'https://eastmanjian.cn/jersey_demo/webapi/headermap'
  */
 @Path("headermap")
 public class HeaderResource {

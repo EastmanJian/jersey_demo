@@ -2,8 +2,6 @@ package jersey.demo.param;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
-import java.util.Map;
-import java.util.Set;
 
 import static jersey.demo.Constants.ARCHE_DESC;
 import static jersey.demo.Constants.NEW_LINE;
@@ -23,7 +21,8 @@ public class BeanInjectResource {
         final String pathParam = beanParam.getPathParam();
         final String matrixParamM = beanParam.getMatrixParamM();
         final String matrixParamN = beanParam.getMatrixParamN();
-        final String headerParam = beanParam.getHeaderParamN();
+        final String headerParamUsrDef = beanParam.getHeaderParamUsrDef();
+        final String headerParamHost = beanParam.getHeaderParamHost();
         final String queryParam = beanParam.getQueryParamN();
 
         return  "This is a demo of injecting the parameters into a single bean." +
@@ -33,7 +32,8 @@ public class BeanInjectResource {
                 "pathParam = " + pathParam + NEW_LINE +
                 "matrixParamM = " + matrixParamM + NEW_LINE +
                 "matrixParamN = " + matrixParamN + NEW_LINE +
-                "headerParam = " + headerParam + NEW_LINE +
+                "headerParamUsrDef = " + headerParamUsrDef + NEW_LINE +
+                "headerParamHost = " + headerParamHost + NEW_LINE +
                 "queryParam = " + queryParam + NEW_LINE +
                 NEW_LINE + ARCHE_DESC;
     }

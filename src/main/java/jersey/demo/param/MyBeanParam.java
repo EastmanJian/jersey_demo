@@ -17,7 +17,10 @@ public class MyBeanParam {
     private String matrixParamN;
 
     @HeaderParam("header")
-    private String headerParam;
+    private String headerParamUsrDef;
+
+    @HeaderParam("host")
+    private String headerParamHost;
 
     private String queryParam;
 
@@ -25,18 +28,11 @@ public class MyBeanParam {
         this.queryParam = queryParam;
     }
 
-    public String getPathParam() {
-        return pathParam;
-    }
-    public String getMatrixParamM() {
-        return matrixParamM;
-    }
-    public String getMatrixParamN() {
-        return matrixParamN;
-    }
-    public String getHeaderParamN() {
-        return headerParam;
-    }
+    public String getPathParam() { return pathParam; }
+    public String getMatrixParamM() { return matrixParamM; }
+    public String getMatrixParamN() { return matrixParamN; }
+    public String getHeaderParamUsrDef() {return headerParamUsrDef; }
+    public String getHeaderParamHost() {return headerParamHost; }
     public String getQueryParamN() {
         return queryParam;
     }
