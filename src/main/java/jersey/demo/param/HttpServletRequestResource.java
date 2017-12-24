@@ -56,6 +56,8 @@ public class HttpServletRequestResource {
         result.append("SecurityContext.getUserPrincipal() =" + context.getUserPrincipal() + "\n");
 
         return  "This is a demo of using @Context to obtain info in HttpServletRequest and SecurityContext." + NEW_LINE + NEW_LINE +
+                "You can also use the following linux curl command to test this resource." + NEW_LINE +
+                "curl -H 'Accept: text/plain' -H 'header: anything' 'https://eastmanjian.cn/jersey_demo/webapi/httpServletReq'" + NEW_LINE + NEW_LINE +
                 "HttpServletRequest and SecurityContext received from URL are:"+ NEW_LINE + result +
                 NEW_LINE + ARCHE_DESC;
     }
