@@ -17,7 +17,7 @@ public class JaxbResource {
     @GET
     @Produces("application/json")
     public MyJaxbBean getMyBean() {
-        return new MyJaxbBean("Agamemnon", 32);
+        return new MyJaxbBean("Endora", 18);
     }
 
 }
